@@ -1,0 +1,108 @@
+body {
+    background-image: url(https://source.unsplash.com/900x900/?India );
+    color: black 3px 2px 3px;
+    text-align: center;
+
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heading {
+    margin-bottom: 20px;
+    font-size: 3rem;
+    color: black 3px 2px 3px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.timer,
+.errors,
+.accuracy,
+.cpm,
+.wpm {
+    background-color: #f5f5c6;
+    height: 60px;
+    width: 70px;
+    margin: 8px;
+    padding: 12px;
+    border-radius: 20%;
+    box-shadow: black 3px 2px 3px;
+}
+
+.cpm,
+.wpm {
+    display: none;
+}
+
+.header_text {
+    text-transform: uppercase;
+    font-size: 0.6rem;
+    font-weight: 600;
+}
+
+.curr_time,
+.curr_errors,
+.curr_accuracy,
+.curr_cpm,
+.curr_wpm {
+    font-size: 2.75rem;
+}
+
+.quote {
+    background-color: hsl(60, 100%, 81%);
+    font-size: 1.5rem;
+    margin: 10px;
+    padding: 25px;
+    box-shadow: black 3px 2px 3px;
+}
+
+.input_area {
+    background-color: #ffff6f;
+    height: 80px;
+    width: 40%;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 15px;
+    padding: 20px;
+    border: 0px;
+    box-shadow: black 3px 2px 3px;
+}
+
+.restart_btn {
+    display: none;
+    background-color: #038883;
+    font-size: 1.5rem;
+    padding: 10px;
+    border: 0px;
+    box-shadow: black 3px 2px 3px;
+}
+
+.incorrect_char {
+    color: rgb(255, 95, 95);
+    text-decoration: underline;
+}
+
+.correct_char {
+    color: rgb(117, 255, 117);
+}
+
+@media screen and (max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}
